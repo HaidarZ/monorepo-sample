@@ -24,7 +24,10 @@
     {
       "files": ["*.ts", "*.tsx"],
       "extends": ["plugin:@nrwl/nx/typescript"],
-      "rules": {}
+      "rules": {
+        "@angular-eslint/directive-class-suffix": ["off"],
+        "@angular-eslint/component-class-suffix": ["off"]
+      }
     },
     {
       "files": ["*.js", "*.jsx"],

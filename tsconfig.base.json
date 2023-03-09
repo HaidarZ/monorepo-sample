@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@meplus/syncfusion-ui": ["libs/syncfusion-ui/src/index.ts"],
+      "@meplus/syncfusion-ui/*": [
+        "libs/syncfusion-ui/src/lib/*/src/public_api.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
