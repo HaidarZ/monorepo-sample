@@ -1,0 +1,18 @@
+<div class="form-item bg-white hover:bg-neutral-50" cdkDrag [cdkDragData]="field">
+  <!-- Template When drag inside container -->
+  <div class="example-custom-placeholder bg-neutral-100 border-dotted	border-2 border-sky-500 min-h-[60px]"
+       *cdkDragPlaceholder>
+    <h3>Place item here</h3>
+  </div>
+
+  <!-- Actual form -->
+  <!-- Actual form -->
+  <div class="actions" (click)="activate()">
+    <button cdkDragHandle class="bg-blue-500 w-20 p10">
+      &nbsp;
+    </button>
+  </div>
+  <div class="form-field">
+    <formly-form [fields]="[fieldConfig]"></formly-form>
+  </div>
+</div>

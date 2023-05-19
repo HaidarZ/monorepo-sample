@@ -5,13 +5,16 @@ import {
   FormlyFieldProps as CoreFormlyFieldProps,
 } from '@ngx-formly/core';
 
-export interface FormlyFieldProps extends CoreFormlyFieldProps { }
+export interface FormlyFieldProps extends CoreFormlyFieldProps {
+  hideLabel?: boolean;
+  hideRequiredMarker?: boolean;
+}
 
 @Component({
   selector: 'meplus-formly-wrapper-form-field',
   template: `
     <div class="mb-3">
-      <label [for]="fieldComponent" className="block text-sm font-medium leading-6 text-gray-900">
+      <label [for]="fieldComponent" class="block text-sm font-medium leading-6 text-gray-900">
         {{ props.label }}
       </label>
       <div class="mt-2">

@@ -1,0 +1,7 @@
+.nav-item.active {
+  @apply bg-indigo-700
+}
+
+.nav-item:not(.active) {
+  @apply hover:bg-indigo-500 hover:bg-opacity-75
+}

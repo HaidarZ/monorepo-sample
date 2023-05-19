@@ -24,7 +24,15 @@ export interface FormlyInputFieldConfig extends FormlyFieldConfig<InputProps> {
       [formlyAttributes]="field"
     />
     <ng-template #numberTmp>
-      <ejs-numerictextbox [formControl]="formControl" value="10"></ejs-numerictextbox>
+      <ejs-numerictextbox
+      [id]="id"
+      [formControl]="formControl"
+      [readonly]="props.readonly"
+      [required]="props.required || false"
+      [tabIndex]="props.tabindex"
+      [placeholder]="props.placeholder"
+      [formlyAttributes]="field">
+    </ejs-numerictextbox>
     </ng-template>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,

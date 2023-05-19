@@ -1,0 +1,13 @@
+<div cdkDropList
+     cdkDropListSortingDisabled
+     (cdkDropListEntered)="onSourceListEntered($event)"
+     (cdkDropListExited)="onSourceListExited($event)"
+     [cdkDropListData]="fieldTypes"
+     [cdkDropListEnterPredicate]="noReturnPredicate"
+     class="h-full grid grid-cols-3 auto-rows-max gap-2 p-4">
+  <div
+    class="w-24 h-24 bg-white rounded-[10px] grid place-items-center shadow hover:cursor-pointer selection:cursor-grab"
+    *ngFor="let field of fieldTypes" cdkDrag [cdkDragData]="field">
+    <span class="block">{{ field.label }}</span>
+  </div>
+</div>

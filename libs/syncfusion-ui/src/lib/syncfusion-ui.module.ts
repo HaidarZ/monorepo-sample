@@ -1,15 +1,26 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormlySyncfusionFormFieldModule } from '@meplus/syncfusion-ui/form-field';
-import { FormlySyncfusionInputModule } from '@meplus/syncfusion-ui/input';
-import { FormlySyncfusionSelectModule } from '@meplus/syncfusion-ui/select';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { FormlySyncfusionFormFieldModule } from "./form-field";
+import { FormlySyncfusionInputModule } from "./input";
+import { FormlySyncfusionSelectModule } from "./select";
+import { FormlySyncfusionRadioModule } from "./radio";
+import { FormlySyncfusionTextAreaModule } from "./textarea";
+import { FormlySyncfusionCheckboxModule } from "./checkbox";
+import { FormlySyncfusionDatepickerModule } from "./datepicker/src/datepicker.module";
+import { FormlySyncfusionJSONSchemaModule } from "./jsonschema";
 
 @NgModule({
   imports: [
     CommonModule,
     FormlySyncfusionFormFieldModule,
     FormlySyncfusionInputModule,
-    FormlySyncfusionSelectModule
+    FormlySyncfusionSelectModule,
+    FormlySyncfusionRadioModule,
+    FormlySyncfusionTextAreaModule,
+    FormlySyncfusionCheckboxModule,
+    FormlySyncfusionDatepickerModule,
+    FormlySyncfusionJSONSchemaModule
   ]
 })
-export class FormlySyncfusionUiModule { }
+export class FormlySyncfusionUiModule {
+}

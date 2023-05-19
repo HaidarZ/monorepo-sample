@@ -1,0 +1,10 @@
+<div class="bg-white rounded-[10px] container h-full">
+  <div class="form h-full border-solid border-2 border-blue-500"
+       cdkDropList
+       (cdkDropListDropped)="onFieldDropped($event)">
+    <meplus-form-field
+      *ngFor="let field of formFields; let i = index"
+      [formField]="field"
+    ></meplus-form-field>
+  </div>
+</div>
